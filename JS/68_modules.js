@@ -1,0 +1,42 @@
+/* 
+1. THE IDEA BEHIND A MODULE IS THAT IT IS A FILE OF RESUABLE CODES
+
+2. WE CAN IMPORT SECTIONS OF PRE-WRITTEN CODES TO USE WHENEVER WE WANT
+
+3. GREAT FOR ANY GENERAL UTILITY VALUES AND FUNCTIONS
+
+4. HELPS TO MAKE YOUR CODE MORE REUSABLE AND MAINTANABLE
+
+5. THINK OF IT AS SEPARATE CHAPTERS OF A BOOK
+*/
+
+// CHECK HTML FILE FOR HOW TO USE A MODULE
+
+// TO IMPORT VARIABLES OR FUNCTIONS FROM THE MODULE, USE THE "import" KEYWORD
+
+import { PI, getCircumference, getArea } from "./68_2_mathUtilModule.js";
+
+console.log(PI);
+
+let circumference = getCircumference(10);
+console.log(circumference);
+
+let area = getArea(10);
+console.log(area);
+
+/* 
+ANOTHER WAY TO IMPORT  
+
+IF THE KEYWORDS ARE TOO MUCH TO IMPORT, YOU CSN IMPORT ALL BY USING THE ASTERISK SYMBOL FOLLOWED BY A NAME SIMILAR TO THE FILE NAME (FOR REMEMBRANCE PURPOSE)
+*/
+import * as MathUthil from "./68_2_mathUtilModule.js";
+
+// TO MAKE USE OF VARIALBES FROM THIS MODULE, PRECEED THEM WITH THE NAME THEN A PERIOD(.) AND THE VARIABLE... E.G
+
+console.log(MathUthil.PI);
+
+let circumference2 = MathUthil.getCircumference(17);
+console.log(circumference2);
+
+let area2 = MathUthil.getArea(17);
+console.log(area2);
