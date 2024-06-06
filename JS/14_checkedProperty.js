@@ -10,6 +10,8 @@ document.getElementById("myButton").onclick = function () {
 
 // METHOD 2 - STORING ELEMENTS WITHIN A VARIABLE
 
+/* 0, brazil, venus, ab, kansas, iron, chinese, 3 hearts, jupiter, pacific */
+
 document.getElementById("myButton").onclick = function () {
   const myCheckbox = document.getElementById("myCheckbox");
   const subscribeMessage = document.getElementById("subscribeMessage");
